@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Booster</title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+</head>
+
+<body>
+
+    <header class="c-header">
+        <div class="container">
+            <div class="c-headerNav-contents">
+                <a href="index.html" class="c-brand-logo">
+                    <img src="./img/logo.svg" alt="Logo">
+                </a>
+                <button aria-label="Toggle navigation" type="button" class="menu-toggler">
+                    <span class="toggle-bar-icon"></span>
+                </button>
+                <div class="c-menu-wrap">
+                    <nav class="c-navbar">
+                        <ul class="c-navMenu">
+                            <li class="c-navitem active">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="c-navitem">
+                                <a href="products.html">Products</a>
+                            </li>
+                            <li class="c-navitem">
+                                <a href="features.html">Features</a>
+                            </li>
+                            <li class="c-navitem">
+                                <a href="industries.html">Industries</a>
+                            </li>
+                            <li class="c-navitem">
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                            <li class="c-navitem last">
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="c-navitem">
+                                <a href="https://bb.buildbooster.com/auth/login">Sign in</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section sec-hero">
+        <div class="container">
+            <div class="c-section-contact">
+                <div class="c-contact-left">
+                    <div class="c-contact-left-text">
+                        <h1 class="heading">3D Visualization, Estimation & Point-of-Sale software for Lumberyard, Steel & Construction Industries</h1>
+                    </div>
+                </div>
+                <div class="c-contact-right">
+                    <div class="hero-tab-btns">
+                        <button data-target="3D" class="active">3D Visualization & Material Take off</button>
+                        <button data-target="POS">Point-of-Sale & ERP</button>
+                        <button data-target="EST">Estimator Detailed Demo</button>
+                    </div>
+                    <div class="hero-tabs">
+                        <div id="3D" class="active">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/b8mUPN1KiiI?si=7f3LxMZ1lS2HhCBO&amp;autoplay=0&showinfo=0&controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div id="POS">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Nzy7bXNRwBI?si=X1iGjb5EVc6Lurh7&amp;autoplay=0&showinfo=0&controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div id="EST">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wg7AV7WNUWM?si=KyvafdrUS3mXHB_a&amp;autoplay=0&showinfo=0&controls=0&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal"></div>
+    <div class="video-popup">
+        <a class="close">&times;</a>
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sCL0SOsxiUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section class="section sec-solutions">
+        <div class="container">
+            <div class="c-solutions-content">
+                <div class="sec-header center">
+                    <h2>Products</h2>
+                    <p>Buildbooster is revolutionizing the lumberyard, steel and construction industries with cutting-edge technology, blending the power of AI and the convenience of the cloud to bring you the most advanced Point-of-Sale and Estimation software.
+                       <br/> Get the advantages of real-time data access, advanced analytics, and automation, enabling the business to optimize operations.</p>
+                </div>
+                <div class="why-choose-wrap">
+                    <div class="accordion-single js-acc-single">
+                        <div class="accordion-single-item js-acc-item is-open">
+                            <h2 class="accordion-single-title js-acc-single-trigger" data-target="prod1">
+                                3D Visualization
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Experience your construction projects in immersive 3D. Visualize floorplans and designs to gain insight...</p>
+                                    <p><a href="products.html#3dvis" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 class="accordion-single-title js-acc-single-trigger" data-target="prod2">
+                                Estimation
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Accurately estimate project costs with our advanced software. From materials to labor, streamline your bud...</p>
+                                    <p><a href="products.html#Est" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 class="accordion-single-title js-acc-single-trigger" data-target="prod3">
+                                Point of Sale
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Simplify your sales process with our point-of-sale solution. From quotes to invoicing, manage transactions...</p>
+                                    <p><a href="products.html#POS" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 class="accordion-single-title js-acc-single-trigger" data-target="prod4">
+                                ERP
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Integrate all aspects of your construction business with our ERP solution. From project management to...</p>
+                                    <p><a href="products.html#ERP" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-choose-banner">
+                            <img id="prod1" src="./img/why-choose-img1.png" alt="why-choose-img" class="active">
+                            <img id="prod2" src="./img/why-choose-img2.png" alt="why-choose-img">
+                            <img id="prod3" src="./img/why-choose-img3.png" alt="why-choose-img">
+                            <img id="prod4" src="./img/why-choose-img4.png" alt="why-choose-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section sec-solutions">
+        <div class="container">
+            <div class="c-solutions-content">
+                <div class="sec-header center">
+                    <h2>Features</h2>
+                    <p>Buildbooster is revolutionizing the lumberyard, steel and construction industries with cutting-edge technology, blending the power of AI and the convenience of the cloud to bring you the most advanced Point-of-Sale and Estimation software.
+                        <br/> Get the advantages of real-time data access, advanced analytics, and automation, enabling the business to optimize operations.</p>
+                </div>
+                <div class="sol-cards">
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-1.png" alt="">
+                            <h2>Inventory Management</h2>
+                            <a href="features.html#inventory" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Inventory Management</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-2.png" alt="">
+                            <h2>Payment Processing</h2>
+                            <a href="features.html#payment" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Payment Processing</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-3.png" alt="">
+                            <h2>Order Management</h2>
+                            <a href="features.html#orderM" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Order Management</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-4.png" alt="">
+                            <h2>Order Tracking</h2>
+                            <a href="features.html#orderT" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Order Tracking</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="sol-cards">
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-5.png" alt="">
+                            <h2>Logistics</h2>
+                            <a href="features.html#logistics" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Logistics</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-6.png" alt="">
+                            <h2>Vendor Integration</h2>
+                            <a href="features.html#vendor" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Vendor Integration</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-7.png" alt="">
+                            <h2>Website & Digital marketing</h2>
+                            <a href="features.html#website" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Website & Digital marketing</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-8.png" alt="">
+                            <h2>Third Party Integrations</h2>
+                            <a href="features.html#thirdp" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Third Party Integrations</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="sol-cards">
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/f-icon-9.png" alt="">
+                            <h2>Mobile First</h2>
+                            <a href="features.html#mobile" class="arr-link">
+                                <img src="./img/arrow.png" alt="icon"/>
+                            </a>
+                        </div>
+                        <div class="back-card">
+                            <h2>Mobile First</h2>
+                            <p>Streamline project cost calculations, ensuring accurate and efficient budgeting for
+                                construction and engineering endeavors.</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section sec-solutions">
+        <div class="container">
+            <div class="c-solutions-content">
+                <div class="sec-header center">
+                    <h2>Industries we cater</h2>
+                    <p>Buildbooster is revolutionizing the lumberyard, steel and construction industries with cutting-edge technology, blending the power of AI and the convenience of the cloud to bring you the most advanced Point-of-Sale and Estimation software.
+                        <br/> Get the advantages of real-time data access, advanced analytics, and automation, enabling the business to optimize operations.</p>
+                </div>
+                <div class="why-choose-wrap">
+                    <div class="why-choose-banner progress-acc-banner">
+                        <img id="inds-1" src="./img/inds-4.png" alt="why-choose-img" class="active">
+                        <img id="inds-2" src="./img/inds-2.png" alt="why-choose-img">
+                        <img id="inds-3" src="./img/inds-1.png" alt="why-choose-img">
+                        <img id="inds-4" src="./img/inds-3.png" alt="why-choose-img">
+                        <img id="inds-5" src="./img/inds-5.png" alt="why-choose-img">
+                        <img id="inds-6" src="./img/inds-6.png" alt="why-choose-img">
+                        <img id="inds-7" src="./img/inds-7.png" alt="why-choose-img">
+                        <img id="inds-8" src="./img/inds-8.png" alt="why-choose-img">
+                    </div>
+                    <div class="progress-accordion">
+                        <div class="accordion-single-item js-acc-item is-open">
+                            <h2 data-target="inds-1" class="accordion-single-title">
+                                Lumberyard
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Our software optimizes inventory management, streamlines procurement, and enhances customer...</p>
+                                    <p><a href="industries.html" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 data-target="inds-2" class="accordion-single-title">
+                                Steel Fabricators
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Our software enhances inventory tracking, facilitates seamless ordering, and improves production plann...</p>
+                                    <p><a href="industries.html" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 data-target="inds-3" class="accordion-single-title">
+                                Manufacturers
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Our software streamlines production processes, improves inventory management, and enhances qualit...</p>
+                                    <p><a href="industries.html" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 data-target="inds-4" class="accordion-single-title">
+                                Distributors
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Our software helps distributors operate efficiently by optimizing inventory management, streamlini...</p>
+                                    <p><a href="industries.html" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 data-target="inds-5" class="accordion-single-title">
+                                General Contractors
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Our software simplifies project management, enhances collaboration, and improves cost estimation...</p>
+                                    <p><a href="industries.html" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 data-target="inds-6" class="accordion-single-title">
+                                Post Frame Builders
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Our software offers specialized tools for post-frame construction, including accurate material...</p>
+                                    <p><a href="industries.html" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 data-target="inds-7" class="accordion-single-title">
+                                Roofing, Siding & Decking Installers
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Our software streamlines project planning, enhances material estimation, and improves communicati...</p>
+                                    <p><a href="industries.html" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-single-item js-acc-item">
+                            <h2 data-target="inds-8" class="accordion-single-title">
+                                Architects
+                            </h2>
+                            <div class="accordion-single-content">
+                                <div>
+                                    <p>Our software enhances design visualization, simplifies project management, and improves collabo...</p>
+                                    <p><a href="industries.html" class="learn-more">Learn More</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section sec-solutions">
+        <div class="container">
+            <div class="c-solutions-content">
+                <div class="sec-header center">
+                    <h2>Why Choose Us</h2>
+                </div>
+                <div class="sol-cards">
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/why-icon-1.png" alt="">
+                            <h2>Innovative Solutions</h2>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/why-icon-2.png" alt="">
+                            <h2>Tailored Solutions for You</h2>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/why-icon-3.png" alt="">
+                            <h2>Customizable Features</h2>
+                        </div>
+                    </article>
+                    <article class="sol-card">
+                        <div class="front-card">
+                            <img src="./img/icons/why-icon-4.png" alt="">
+                            <h2>Flexibility for Scalability</h2>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="c-customer-content">
+                <div class="sec-header">
+                    <h2>Our customer service defines us</h2>
+                    <p>At Buildbooster, we pioneer advanced Lumberyard Point-of-Sale and Estimation software, redefining
+                        industry standards for efficiency and user-friendliness. Join hundreds of mid-west lumberyards
+                        already transformed.</p>
+                </div>
+                <div class="customer-banner">
+                    <img src="./img/map.png" alt="map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section sec-testimonial">
+        <div class="container">
+            <div class="c-testimonial-content">
+                <div class="testimonial-left">
+                    <div class="sec-header">
+                        <h5>Testimonials</h5>
+                        <h2>This is what the industry experts have to say about Buildbooster</h2>
+                        <p>Some of the leading names in the industry are improving their ROI with Buildbooster</p>
+                        <a href="contact.html" class="cta">Ask for Demo</a>
+                    </div>
+                </div>
+                <div class="testimonial-slider">
+                    <img src="./img/quote.png" alt="quote" class="quote-icon">
+
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <p class="description">
+                                My Project Estimator has been an essential tool for us for about 3 years. Initially hesitant about its upkeep and support, we found it easy to learn, update, and maintain pricing and SKUs. Gary, the support, is prompt and helpful. I highly recommend it as a must-have for its ease of use and exceeding expectations.
+                            </p>
+                            <h3 class="title">John Kukowski</h3>
+                            <p class="post">Vice President - Infinity Building Services</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                Me and my partner use it every day - for estimating and to keep track of my pricing.
+                            </p>
+                            <h3 class="title">Tannar</h3>
+                            <p class="post">ADRIAN LUMBER</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                It works for very complex designs and saves a lot of time.
+                            </p>
+                            <h3 class="title">SID</h3>
+                            <p class="post">LANGDON BUILDING CENTER</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                Keeps track of every changing prices very easily so I can quote with confidence. I know my Profit on every quote.
+                            </p>
+                            <h3 class="title">CHAD</h3>
+                            <p class="post">WATERVILLE BUILDING CENTER</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                This estimating program does more work at my store than my Bookkeeping program.
+                            </p>
+                            <h3 class="title">BOBBY</h3>
+                            <p class="post">ULEN BUILDING SUPPLIES</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                I have had excellent support any time I need it. (Which is not very often)
+                            </p>
+                            <h3 class="title">JOHN</h3>
+                            <p class="post">SAWMILL LUMBER</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                I use it every day and I don't know what I would do if it didn't have it
+                            </p>
+                            <h3 class="title">MIKE M.</h3>
+                            <p class="post">FEDERATED CO-OPS</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                I Prefer to other Estimating Program because it is easy to use and does what I need it to do
+                            </p>
+                            <h3 class="title">DARREN</h3>
+                            <p class="post">FARMERS LUMBER COOPERATIVE</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                I was able to do an Estimate the first day I got it - Very user friendly
+                            </p>
+                            <h3 class="title">JESSE & MADDISON</h3>
+                            <p class="post">Plankinton Builders Supply</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                The first estimate I did I was able to complete (Including Priding) is less that 1/10 the time it used to take
+                            </p>
+                            <h3 class="title">JOSH & CHRIS</h3>
+                            <p class="post">Pulaski Lumber Co</p>
+                        </div>
+
+                        <div class="testimonial">
+                            <p class="description">
+                                Even my sales staff with no estimating experience can use it.
+                            </p>
+                            <h3 class="title">Warren</h3>
+                            <p class="post">Nuzum Building Supply</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="c-footer-contents">
+                <div class="c-footer-left">
+                    <div class="c-footer-left-text">
+                        <a href="index.html" class="c-brand-logo footer-logo">
+                            <img src="./img/logo.svg" alt="Logo">
+                        </a>
+                        <p>Buildbooster is a modern Estimation & Point of Sale Software for lumberyards and hardware stores. It combines the benefits of cloud technology and artificial intelligence to enhance efficiency, customer service, and data-driven decision-making.</p>
+                        <!-- <ul class="footer-social">
+                            <li>
+                                <a href="#!"><img src="./img/image 9.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#!"><img src="./img/image 10.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#!"><img src="./img/image 11.png" alt=""></a>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="c-footer-right">
+                    <div class="c-footer-right-text">
+                        <h3>Get In Touch</h3>
+                        <p>Email: contact@buildbooster.com</p>
+                        <p><img src="./img/tel.png" alt="tel"> 952 250 7500</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="c-footer-copy">
+                <p>©2024 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#testimonial-slider").owlCarousel({
+                items: 1,
+                itemsDesktop: [1000, 1],
+                itemsDesktopSmall: [979, 1],
+                itemsTablet: [768, 1],
+                pagination: false,
+                navigation: true,
+                navigationText: ["<img src='./img/arror-slider-left.png'>","<img src='./img/arror-slider.png'>"],
+                slideSpeed: 1000,
+                autoPlay: true
+            });
+        });
+    </script>
+
+    <script>
+        const menu = {
+            css: {
+                menuBtn: 'menu-toggler',
+                mainMenu: 'c-menu-wrap',
+            },
+            dom: {
+                menuBtnSelect: () => document.querySelector(`.${menu.css.menuBtn}`),
+                mainMenuSelect: () => document.querySelector(`.${menu.css.mainMenu}`),
+            },
+            init: () => {
+                const menubtn = menu.dom.menuBtnSelect();
+                const menubar = menu.dom.mainMenuSelect();
+                if (menubtn != 'undefined' && menubtn != null) {
+                    menubtn.addEventListener('click', () => {
+                        if (menubar.classList.contains('show')) {
+                            menubar.classList.remove('show');
+                            menubar.setAttribute('aria-expand', 'false');
+                            menubar.style.height = '0px';
+                        } else {
+                            menubar.classList.add('show');
+                            menubar.setAttribute('aria-expand', 'true');
+                            menubar.style.height = `${menubar.scrollHeight + 1}px`;
+                        }
+                    });
+                }
+            }
+        }
+        menu.init();
+    </script>
+
+    <script>
+        // Progress Accordion
+        const progAccTrigger = document.querySelectorAll('.progress-accordion .accordion-single-title');
+        progAccTrigger.forEach(trigger => trigger.addEventListener('click', toggleAccordion));
+        function toggleAccordion() {
+            const items = this.closest('.progress-accordion').querySelectorAll('.js-acc-item');
+            const thisItem = this.parentNode;
+            items.forEach(item => {
+                if (thisItem == item) {
+                    thisItem.classList.toggle('is-open');
+                    return;
+                }
+                item.classList.remove('is-open');
+            });
+
+            const heroTabs = document.querySelectorAll('.why-choose-banner img');
+            heroTabs.forEach(item => {
+                if (this.getAttribute('data-target') == item.id) {
+                    item.classList.add('active');
+                }
+                else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+    </script>
+
+    <script>
+        // Products Accordion
+        const accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');
+        accSingleTriggers.forEach(trigger => trigger.addEventListener('click', toggleAccordion));
+        function toggleAccordion() {
+            const items = this.closest('.accordion-single').querySelectorAll('.js-acc-item');
+            const thisItem = this.parentNode;
+            items.forEach(item => {
+                if (thisItem == item) {
+                    thisItem.classList.toggle('is-open');
+                    return;
+                }
+                item.classList.remove('is-open');
+            });
+            
+            const heroTabs = document.querySelectorAll('.why-choose-banner img');
+            heroTabs.forEach(item => {
+                if (this.getAttribute('data-target') == item.id) {
+                    item.classList.add('active');
+                }
+                else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+    </script>
+
+    <script>
+        // Hero Section Tabs
+        const heroTabBtns = document.querySelectorAll('.hero-tab-btns button');
+        heroTabBtns.forEach(trigger => trigger.addEventListener('click', heroTabFun));
+        function heroTabFun() {
+            heroTabBtns.forEach(trigger => trigger.classList.remove('active'));
+            this.classList.add('active');
+            const heroTabs = document.querySelectorAll('.hero-tabs div');
+            heroTabs.forEach(item => {
+                if (this.getAttribute('data-target') == item.id) {
+                    item.classList.add('active');
+                }
+                else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
